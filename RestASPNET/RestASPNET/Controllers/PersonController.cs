@@ -9,11 +9,11 @@ using Microsoft.Extensions.Logging;
 namespace RestASPNET
 {
     [Route("[controller]")]
-    public class CalculatorController : Controller
+    public class PersonController : Controller
     {
-        private readonly ILogger<CalculatorController> _logger;
+        private readonly ILogger<PersonController> _logger;
 
-        public CalculatorController(ILogger<CalculatorController> logger)
+        public PersonController(ILogger<PersonController> logger)
         {
             _logger = logger;
         }
