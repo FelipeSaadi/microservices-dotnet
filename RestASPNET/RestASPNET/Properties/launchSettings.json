@@ -32,7 +32,15 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "swagger",
+      "launchUrl": "api/person",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "RestASPNET": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/person",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

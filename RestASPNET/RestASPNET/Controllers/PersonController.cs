@@ -10,7 +10,7 @@ using RestASPNET.Services;
 
 namespace RestASPNET
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class PersonController : Controller
     {
         private readonly ILogger<PersonController> _logger;
@@ -50,7 +50,7 @@ namespace RestASPNET
             return Ok(_personService.Update(person));
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
             _personService.Delete(id);

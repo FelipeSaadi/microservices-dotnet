@@ -16,16 +16,12 @@ namespace RestASPNET.Services.Implementations
             return person;
         }
 
-        public Person Delete(long id)
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Person> FindAll()
         {
             List<Person> persons = [];
-            
-            for(int i = 0; i < 8; i++) {
+
+            for (int i = 0; i < 8; i++)
+            {
                 Person person = MockPerson(i);
                 persons.Add(person);
             }
@@ -47,7 +43,12 @@ namespace RestASPNET.Services.Implementations
 
         public Person Update(Person person)
         {
-            throw new NotImplementedException();
+            return person;
+        }
+
+        public void Delete(long id)
+        {
+
         }
 
         private Person MockPerson(int i)
